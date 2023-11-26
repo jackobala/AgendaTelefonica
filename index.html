@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Telefônica</title>
+    <link rel="stylesheet" href="./main.css"
+</head>
+<body>
+    <h1>Agenda Telefônica</h1>
+    <form id="contatos">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required>
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" maxlength="9" required>
+        <button type="button" onclick="adicionarContato()">Adicionar contato</button>
+    </form>
+
+    <!--tabela-->
+    <h1>Lista de contatos</h1>
+    <table id="contatos">
+        <thead>
+            <tr>
+                <th>Nome:</th>
+                <th>Telefone:</th>
+            </tr>
+        </thead>
+        <tbody id="contatosBody"></tbody>
+    </table>
+    <script src="./main.js"></script>
+    <footer>
+        <p>&copy; 2023 Desenvolvido por Jackson. Apenas para fins de estudo.</p>
+    </footer>
+</body>
+</html>
